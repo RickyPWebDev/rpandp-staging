@@ -1,0 +1,627 @@
+* {
+    padding:0;
+    margin:0;
+    font-family: "Poppins", sans-serif;
+    line-height:1.5em;
+    letter-spacing:0.1em;
+}
+
+/* Form error feedback */
+
+.form-error {
+    text-align:center;
+    font-weight:bold;
+    color:red;
+
+}
+
+/* Navigation Styling  */
+
+
+nav {
+    position:sticky;
+    top:0; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: #0752f5;
+    padding: 0 20px; /* Add padding to the sides */
+    z-index: 500;
+}
+
+#nav-title {
+    color: white;
+    font-size: 1.2em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    transition: all 0.3s ease 0s;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: darkgray;
+    text-decoration: underline;
+    font-size: 1.6em;
+}
+
+
+#nav-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color:white;
+    text-align:left;
+    font-size: 1.2em;
+    margin-left:2%;
+    margin-right:30%;
+}
+
+
+
+/* hero section styling  */
+
+.hero-section {
+    position: relative;
+    height:900px;
+    background-image:url(../assets/background-img2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    z-index:501;
+    
+}
+
+.logo {
+    padding-top:10%;
+    display:block;
+    margin:0 auto;
+    filter:drop-shadow(2px 5px 4px rgb(13, 14, 13));
+}
+
+
+.hero-content{
+    height:100%; 
+}
+
+.hero-content h1 {
+    display:flex;
+    justify-content: center;
+    padding-top:1%;
+    font-size:4em;
+    font-weight:bold;
+    text-shadow: 2px 10px 4px rgba(159, 160, 163, 0.781)
+}
+
+.hero-content p {
+    display:flex;
+    justify-content: center;
+    padding-top:0;
+    font-size:1.5em;
+    font-weight:bold;
+}
+
+
+/* Call to action button link to projects */
+.call-to-action {
+    display: block;
+    margin: 0 auto;
+    margin-top:5%;
+    width: 20%;
+    text-align:center;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #002f94;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s all;
+    box-shadow: 5px 5px black;
+    animation: pulse-animation 2s infinite;
+    
+}
+
+@keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+  }
+
+.call-to-action:hover {
+    color: #eae1df;
+    font-size: 25px;
+}
+
+.call-to-action:active {
+    box-shadow: 2px 2px black;
+    transform: scale(0.98);
+}
+
+
+
+/* Text  effect styling */
+
+.fade-in-text {
+    animation: fadeIn 4s;
+
+}
+
+@keyframes fadeIn {
+    0% { 
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+/* about us section styling  */
+
+.about-us{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top:100px;
+    padding-bottom:100px;
+    gap:50px;
+}
+
+
+.rp-and-p {
+    padding-left:300px;
+}
+
+
+.rp-and-p h2 {
+    font-size: 2.5em;
+}
+
+.right-text {
+}
+
+.right-text h2 {
+    font-size: 2.5em;
+}
+
+.info {
+    text-align:center;
+}
+
+.info h2 {
+    font-size: 2.5em;
+}
+
+/* website image container || projects*/
+
+.projects-container {
+    background-color: #c4f0d675;
+ }
+ 
+ .projects-container > h2 {
+     text-align:center;
+     padding-top:100px;
+     font-size:2.5em;
+     text-shadow: 2px 5px 4px rgba(153, 148, 148, 0.781);
+ }
+ 
+ .image-container{
+     display:flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap:50px;
+     padding-top:100px;
+     padding-bottom:100px;
+ }
+ 
+ .images{
+     flex: 0 1 calc(33% - 10px);
+     height:350px;
+     width:100%;
+     border-radius:5px;
+ }
+
+
+ 
+ figcaption {
+     text-align:center;
+     font-weight:bold;
+     border:solid 2px rgb(17, 1, 1);
+ }
+
+ .scroll-img {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: Add a subtle animation effect */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scroll-img.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+ 
+ 
+ 
+ 
+ /* services section */
+
+
+ .services > h2 {
+    text-align: center;
+    font-size:2.5em;
+    text-shadow: 2px 5px 4px rgba(153, 148, 148, 0.781);
+    padding-top:50px;
+ }
+
+ .services ul{
+    list-style-type: none;
+    display:block;
+    margin: 0 auto;
+    padding-left:10%;
+    padding-top:2%;
+    padding-bottom:2%;
+    width:50%;
+    border:solid 2px #002f94;
+    margin-top:50px;
+    text-align: left;
+    font-size:1.8em;
+ }
+
+.services li {
+    padding-bottom:20px;
+}
+
+.service-img{
+    width:50px;
+}
+
+/* pricing section style rules  */
+
+.pricing-section {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top:200px;
+    gap: 20px; 
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    margin-left:5%;
+    margin-right:5%;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.5;
+  }
+
+/* contact us section style rules */
+
+.contact-us{
+    color:white;
+    background-color:#002f94;
+    margin-top:100px;
+}
+
+/* .contact-us > h2{
+    text-align:center;
+    padding-top:100px;
+     font-size:3em;
+     font-weight:bold;
+     text-shadow: 2px 5px 4px rgba(0, 0, 0, 0.781);
+} */
+
+.lrg-gap {
+    text-align:center;
+    padding-top:100px;
+     font-size:3em;
+     font-weight:bold;
+     text-shadow: 2px 5px 4px rgba(0, 0, 0, 0.781);
+}
+
+.smaller-gap {
+    text-align:center;
+    margin-top:50px;
+    margin-bottom:20px;
+}
+
+
+.contact-us > p {
+    text-align:center;
+    padding-top:20px;
+    font-size:2em;
+    margin-bottom:20px;
+    
+}
+
+.contact-us a {
+    color:white;
+    text-decoration:none;
+}
+
+.form-header {
+    color:black;
+}
+
+.form-container {
+    padding-bottom:100px;
+}
+
+  
+  form {
+    margin:0 auto;
+    background: #fff;
+    display:flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+  
+  form input, form textarea {
+    border:0;
+    margin:10px 0; 
+    padding: 20px;
+    outline:none;
+    background: #002f94;
+    font-size: 16px;
+  }
+  
+  form button {
+    padding: 10px;
+    background: #3cb371;
+    color: #fff;
+    font-size: 18px;
+    border:0;
+    outline:none;
+    cursor:pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+  }
+
+  form input::placeholder,
+  form textarea::placeholder {
+      color: white;
+  }
+
+  form input,textarea {
+    color: white;
+  }
+
+
+  /* footer  */
+
+
+  footer p {
+    text-align:center;
+    font-size: 1.5em;
+    padding-top:50px;
+  }
+  
+  footer span {
+    padding-top:20px;
+    margin:0 auto;
+  }
+
+
+
+/* Responsive design */
+
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    nav li {
+        margin: 10px 0;
+        padding-left: 10px;
+    }
+
+    .hero-section {
+        height: auto;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .call-to-action {
+        width: 50%;
+    }
+
+    .about-us {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .about-us h2 {
+        font-size: 2em;
+    }
+
+    .about-us p {
+        width: 80%;
+    }
+
+    .images {
+        flex: 0 1 calc(33.33% - 20px);
+    }
+
+    .services > h2 {
+        padding-top: 50px;
+    }
+
+    .services ul {
+        padding: 0;
+    }
+
+    .service-img {
+        width: 30px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    nav li {
+        display: block;
+        padding: 10px;
+        text-align: center;
+
+    }
+
+    nav a {
+        font-size: 0.8em;
+    }
+
+    #nav-title {
+        font-size: 0.8em;
+    }
+
+    .hero-section {
+        height: 300px;
+        width:100%;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5em;
+    }
+
+    .hero-content p {
+        font-size: 0.8em;
+    }
+
+    .about-us{
+        display:grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        text-align:center;   
+    }
+
+    .rp-and-p {
+        padding-left:20px;
+    }
+
+    .rp-and-p p {
+        margin-left:30px;
+    }
+
+    .right-text {
+        margin-left:20px;
+    }
+
+    .right-text p {
+        margin-left:30px;
+    }
+
+    .services > h2 {
+        text-align: center;
+        font-size:2.5em;
+        text-shadow: 2px 5px 4px rgba(153, 148, 148, 0.781);
+        padding-top:50px;
+     }
+    
+     .services ul{
+        list-style-type: none;
+        display:block;
+        margin: 0 auto;
+        padding-left:10%;
+        padding-top:2%;
+        padding-bottom:2%;
+        width:50%;
+        border:solid 2px #002f94;
+        margin-top:50px;
+        text-align: left;
+        font-size:1.8em;
+     }
+    
+    .services li {
+        padding-bottom:20px;
+    }
+
+    .services ul {
+        width: 80%;
+    }
+
+    .pricing-section {
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+
+    
+    .lrg-gap {
+        font-size: 1.5em;
+    }
+
+    .contact-us > p {
+        font-size: 0.8em;
+    }
+
+    form input,
+    form textarea {
+        padding: 15px;
+    }
+
+    form button {
+        padding: 8px;
+        font-size: 14px;
+        width: 120px;
+    }
+
+    .images {
+        flex: 0 1 calc(33.33% - 50px);
+    }
+
+    .float-right h2 {
+        padding-top: 200px;
+    }
+
+    footer p {
+        text-align:center;
+        font-size: 1em;
+        padding-top:50px;
+      }
+}
