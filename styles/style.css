@@ -268,42 +268,6 @@ nav a:hover {
 }
  
  
- 
- 
- /* services section */
-
- .services {
-    margin-top:100px;
- }
-
- .services > h2 {
-    text-align: center;
-    font-size:2.5em;
-    text-shadow: 2px 5px 4px rgba(153, 148, 148, 0.781);
-    padding-top:50px;
-    margin-bottom:100px;
- }
-
- .services ul{
-    list-style-type: none;
-    display:block;
-    margin: 0 auto;
-    padding-left:10%;
-    padding-top:2%;
-    width:50%;
-    margin-top:50px;
-    text-align: left;
-    font-size:1.8em;
- }
-
-.services li {
-    padding-bottom:200px;
-}
-
-.service-img{
-    width:50px;
-}
-
 /* pricing section style rules  */
 
 .pricing-section {
@@ -558,54 +522,33 @@ nav a:hover {
     }
 
     .rp-and-p {
-        padding-left:20px;
+        padding-left:10px;
     }
 
     .rp-and-p p {
-        margin-left:30px;
+        margin-left:40px;
     }
 
     .right-text {
-        margin-left:20px;
+        margin-left:30px;
     }
 
     .right-text p {
         margin-left:30px;
     }
 
-    .services > h2 {
-        text-align: center;
-        font-size:2.5em;
-        text-shadow: 2px 5px 4px rgba(153, 148, 148, 0.781);
-        padding-top:50px;
-     }
-    
-     .services ul{
-        list-style-type: none;
-        display:block;
-        margin: 0 auto;
-        padding-left:10%;
-        padding-top:2%;
-        padding-bottom:2%;
-        width:50%;
-        margin-top:50px;
-        text-align: left;
-        font-size:1.8em;
-     }
-    
-    .services li {
-        padding-bottom:20px;
-    }
-
-    .services ul {
-        width: 80%;
-    }
 
     .pricing-section {
         display:grid;
         grid-template-columns: 1fr;
     }
 
+    .card img {
+        width: 250px;
+        height:250px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
     
     .lrg-gap {
         font-size: 1.5em;
