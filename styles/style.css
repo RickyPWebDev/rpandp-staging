@@ -180,9 +180,9 @@ nav a:hover {
 .about-us{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    padding-top:100px;
-    padding-bottom:100px;
+    padding-top:350px;
     gap:50px;
+    font-size:1.2em;
 }
 
 
@@ -193,13 +193,21 @@ nav a:hover {
 
 .rp-and-p h2 {
     font-size: 2.5em;
+    margin-bottom:100px;
 }
 
-.right-text {
+.rp-and-p p {
+    padding-bottom: 10px;
+}
+
+.right-text p {
+    padding-bottom: 10px;
+    
 }
 
 .right-text h2 {
     font-size: 2.5em;
+    margin-bottom:100px;
 }
 
 .info {
@@ -213,7 +221,8 @@ nav a:hover {
 /* website image container || projects*/
 
 .projects-container {
-    background-color: #c4f0d675;
+    margin-top:400px;
+    /* background-color: #c4f0d675; */
  }
  
  .projects-container > h2 {
@@ -263,12 +272,16 @@ nav a:hover {
  
  /* services section */
 
+ .services {
+    margin-top:100px;
+ }
 
  .services > h2 {
     text-align: center;
     font-size:2.5em;
     text-shadow: 2px 5px 4px rgba(153, 148, 148, 0.781);
     padding-top:50px;
+    margin-bottom:100px;
  }
 
  .services ul{
@@ -277,16 +290,14 @@ nav a:hover {
     margin: 0 auto;
     padding-left:10%;
     padding-top:2%;
-    padding-bottom:2%;
     width:50%;
-    border:solid 2px #002f94;
     margin-top:50px;
     text-align: left;
     font-size:1.8em;
  }
 
 .services li {
-    padding-bottom:20px;
+    padding-bottom:200px;
 }
 
 .service-img{
@@ -299,7 +310,9 @@ nav a:hover {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top:200px;
+    margin-bottom:200px;
     gap: 20px; 
+    height:100%;
 }
 
 .card {
@@ -310,23 +323,26 @@ nav a:hover {
     text-align: center;
     margin-left:5%;
     margin-right:5%;
+    height:100%;
+    margin-top: 200px;
   }
   
   .card img {
-    width: 100%;
+    width: 50%;
+    height:30%;
     border-radius: 10px;
     margin-bottom: 10px;
   }
   
   .card h3 {
-    font-size: 20px;
+    font-size: 28px;
     margin-bottom: 10px;
   }
   
   .card p {
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.6);
+    font-size: 18px;
     line-height: 1.5;
+    padding-bottom:20px;
   }
 
 /* contact us section style rules */
@@ -572,7 +588,6 @@ nav a:hover {
         padding-top:2%;
         padding-bottom:2%;
         width:50%;
-        border:solid 2px #002f94;
         margin-top:50px;
         text-align: left;
         font-size:1.8em;
