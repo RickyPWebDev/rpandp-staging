@@ -137,14 +137,7 @@ nav a:hover {
     
 }
 
-@keyframes pulse-animation {
-    0% {
-      box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
-    }
-    100% {
-      box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
-    }
-  }
+
 
 .call-to-action:hover {
     color: #eae1df;
@@ -165,49 +158,37 @@ nav a:hover {
 
 }
 
-@keyframes fadeIn {
-    0% { 
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
+
 
 
 /* about us section styling  */
 
 .about-us{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top:350px;
-    gap:50px;
-    font-size:1.2em;
+    padding-top:300px;
+}
+
+.about-us P {
+    text-align: center;
+}
+
+.why {
+    text-align:center;
 }
 
 
-.rp-and-p {
-    padding-left:300px;
-}
-
-
-.rp-and-p h2 {
+.why h2 {
     font-size: 2.5em;
-    margin-bottom:100px;
 }
 
-.rp-and-p p {
-    padding-bottom: 10px;
+.reasons {
+    display:block;
+    margin:0 auto;
+    width:50%;
+    margin-top:50px;
 }
 
-.right-text p {
-    padding-bottom: 10px;
-    
-}
-
-.right-text h2 {
-    font-size: 2.5em;
-    margin-bottom:100px;
+.reasons h3 {
+    text-align:center;
 }
 
 .info {
@@ -221,15 +202,15 @@ nav a:hover {
 /* website image container || projects*/
 
 .projects-container {
-    margin-top:400px;
-    /* background-color: #c4f0d675; */
+    margin-top:300px;
+    background-color:black;
  }
  
  .projects-container > h2 {
      text-align:center;
      padding-top:100px;
      font-size:2.5em;
-     text-shadow: 2px 5px 4px rgba(153, 148, 148, 0.781);
+     color:white;
  }
  
  .image-container{
@@ -254,6 +235,7 @@ nav a:hover {
      text-align:center;
      font-weight:bold;
      border:solid 2px rgb(17, 1, 1);
+     color:white;
  }
 
  .scroll-img {
@@ -270,10 +252,33 @@ nav a:hover {
  
 /* pricing section style rules  */
 
+.bronze {
+    color: #CD7F32;
+}
+
+.silver {
+    color: #c0c0c0;
+}
+
+.gold {
+    color: #FFD700;
+}
+
+.blue {
+    color:#002f94;
+}
+
+.service-background-color {
+    margin-top:150px;
+    height:90vh;
+    background-image: url(../assets/background-img2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .pricing-section {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top:200px;
     margin-bottom:200px;
     gap: 20px; 
     height:100%;
@@ -287,8 +292,8 @@ nav a:hover {
     text-align: center;
     margin-left:5%;
     margin-right:5%;
-    height:100%;
-    margin-top: 200px;
+    height:90%;
+    margin-top:5%;
   }
   
   .card img {
@@ -309,6 +314,9 @@ nav a:hover {
     padding-bottom:20px;
   }
 
+  .card ul {
+    list-style-type: none;
+  }
 /* contact us section style rules */
 
 .contact-us{
@@ -521,26 +529,15 @@ nav a:hover {
         text-align:center;   
     }
 
-    .rp-and-p {
-        padding-left:10px;
-    }
-
-    .rp-and-p p {
-        margin-left:40px;
-    }
-
-    .right-text {
-        margin-left:30px;
-    }
-
-    .right-text p {
-        margin-left:30px;
-    }
-
+ 
 
     .pricing-section {
         display:grid;
         grid-template-columns: 1fr;
+    }
+
+    .card { 
+        margin-top:50px;
     }
 
     .card img {
@@ -582,4 +579,26 @@ nav a:hover {
         font-size: 1em;
         padding-top:50px;
       }
+}
+
+
+/* Animation key frames */
+
+@keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+  }
+
+
+  @keyframes fadeIn {
+    0% { 
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
