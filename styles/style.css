@@ -268,13 +268,13 @@ nav a:hover {
     color:#002f94;
 }
 
-.service-background-color {
+/* .service-background-color {
     margin-top:150px;
     height:90vh;
     background-image: url(../assets/background-img2.jpg);
     background-size: cover;
     background-attachment: fixed;
-}
+} */
 
 .pricing-section {
     display:grid;
@@ -498,13 +498,26 @@ nav a:hover {
 
 /* Adjustments for smaller screens (e.g., smartphones) */
 @media only screen and (max-width: 430px) {
+    nav {
+        padding: 5px; /* Reduce padding for smaller screens */
+        height: auto; /* Let the height adjust dynamically */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation links vertically */
+        align-items: center; /* Center align the links */
+    }
+
     nav li {
-        padding: 5px;
-        text-align: center;
+        margin: 5px 0; /* Add some vertical spacing between links */
     }
 
     nav a {
-        font-size: 0.9em;
+        font-size: 0.8em; /* Decrease font size for better fit */
+    }
+
+    #nav-title {
+        margin-right: 10px; /* Adjust margin for better alignment */
     }
 
     .hero-section {
@@ -520,17 +533,34 @@ nav a:hover {
     }
 
     .call-to-action {
-        width: 70%;
+        width: 80%;
+        
+    }
+
+    .about-us {
+        margin-top:100px;
     }
 
     .about-us p {
-        width: 90%;
+        width: 100%;
         font-size: 0.8em;
     }
 
+    .reasons {
+        width:90%;
+        
+    }
     .projects-container > h2 {
         padding-top: 30px;
         font-size: 1.5em;
+    }
+
+    .pricing-section {
+        display:grid;
+        grid-template-columns: 1fr;
+        margin-bottom:200px;
+        gap: 20px; 
+        height:100%;
     }
 
     .image-container {
@@ -550,6 +580,25 @@ nav a:hover {
     footer p {
         font-size: 0.8em;
         padding-top: 20px;
+    }
+
+    form {
+        padding: 2vw; /* Adjust padding for smaller screens */
+    }
+
+    form input,
+    form textarea {
+        padding: 15px; /* Increase padding for better touch interaction */
+        font-size: 14px; /* Decrease font size for better fit */
+    }
+
+    form button {
+        font-size: 16px; /* Adjust button font size */
+        width: 100%; /* Make button full width */
+    }
+
+    .contact-us p {
+        font-size:0.8em;
     }
 }
 
